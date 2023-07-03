@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import re
 
-#code to check 
+#code to get the prefixes and data types 
 # for prefix, theType, value in ijson.parse(open('dev.jsonl', encoding="utf-8"),multiple_values=True):
 #     print(prefix)
 
@@ -121,7 +121,7 @@ for prefix, event, value in data:
         annotation_count = annotation_count + 1
         print(annotation_count)
 
-    #used only 100 rows to avoid front end issues due to high number of columns. Can change the number of rows by changing annotation_count
+    #Can change the number of rows by changing annotation_count
     if(annotation_count>=7830):
         print(df['short_answers'])
 
